@@ -1,4 +1,4 @@
-# Interactive RSA Communication System
+# Digital Signature
 
 This project is an interactive RSA-based communication system written in Scala. It demonstrates secure communication
 using RSA encryption and decryption. Users can be created with their own RSA key pairs, sessions can be established
