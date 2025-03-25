@@ -69,7 +69,7 @@ the recipient’s private key).
 
 3. **Run the Application:**  
    From the project root, run:
-   sbt run
+   `sbt run`
    This starts the interactive shell. You can then type commands such as:
     - create user Alice
     - create user Bob
