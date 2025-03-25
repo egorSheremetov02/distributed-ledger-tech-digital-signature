@@ -23,9 +23,9 @@ class RSA(primeBitLength: Int) {
 
   def getPrivateKey: (BigInt, BigInt) = (n, d)
 
-  private def encryptNumber(message: BigInt): BigInt = message.modPow(e, n)
+  def encryptNumber(message: BigInt): BigInt = message.modPow(e, n)
 
-  private def decryptNumber(cipher: BigInt): BigInt = cipher.modPow(d, n)
+  def decryptNumber(cipher: BigInt): BigInt = cipher.modPow(d, n)
 
   // Determines the maximum block size (in bytes) so that a text block converted to a BigInt is less than n.
   private def getBlockSize: Int = ((n.bitLength - 1) / 8)
